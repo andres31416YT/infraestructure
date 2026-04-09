@@ -1,0 +1,18 @@
+services:
+  web1:
+    container_name: server_01
+    build:
+      context: ./web01
+      dockerfile: Dockerfile.web1
+    ports:
+      - "4000:80"
+
+  web2:
+    container_name: server_02
+    build:
+      context: ./web02
+      dockerfile: Dockerfile.web2
+    ports:
+      - "4001:80"
+
+
